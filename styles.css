@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Poppins:wght@500;600&family=Roboto:wght@400;900&family=Ubuntu&display=swap');
+
+:root{
+    --green:#16a085;
+    --black:#444;
+    --light-clr:#777;
+    --box-shadow:.5rem .5rem 0 rgba(22, 160, 133, .2);
+    --text-shadow:.4rem .4rem 0 rgba(0, 0, 0, .2);
+    --border:.2rem solid var(--green)
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+    background: #fff;
+    
+}
+section{
+    padding: 2rem 9%;
+    font-size: 1.5rem;
+}
+.header{
+    padding: 2rem 9%;
+    display: flex;
+    position: sticky;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+}
+.logo{
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.logo span{
+    color: var(--green);
+}
+.navbar a{
+    font-size: 1.5rem;
+    color:var(--light-clr);
+    margin-left: 2rem;
+}
+.navbar a:hover{
+    color: var(--green);
+}
+#menuBtn{
+    font-size: 2rem;
+    border-radius:.5rem;
+    background: #eee;
+    color:var(--green);
+    padding:1rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap:2rem;
+}
+h3{
+    font-size:3rem;
+}
+.image img{
+    width:100%;
+}
+.btn{
+  appearance: none;
+  backface-visibility: hidden;
+  background-color: #27ae60;
+  border-radius: 8px;
+  border-style: none;
+  box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.5;
+  outline: none;
+  overflow: hidden;
+  padding: 13px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transform: translate3d(0, 0, 0);
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background-color: var(--green);
+  opacity: 1;
+  transform: translateY(0);
+  transition-duration: .35s;
+}
+
+.btn:active {
+  transform: translateY(2px);
+  transition-duration: .35s;
+}
+
+.btn:hover {
+  box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
+}
+
+#content > * {
+    display: block;
+    margin-top: 2rem;
+}
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    text-shadow: var(--text-shadow);
+    text-transform: uppercase;
+    color: var(--black);
+    font-size: 5rem;
+    letter-spacing:.4rem;
+}
+.heading span{
+    color: var(--green);
+    text-transform: uppercase;
+}
+
+.services .box-container{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(27rem,1fr));
+}
+
+.services .box-container .box{
+    background: #fff;
+    border-radius:.5rem;
+    box-shadow:var(--box-shadow);
+    border: var(--border);
+    padding:2.5rem;
+}
+.services .box-container .box i{
+    color: var(--green);
+    font-size: 5rem;
+    padding-bottom: 0.5rem;
+}
+.services .box-container .box h3{
+    color: var(--black);
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+.services .box-container .box p{
+    color: var(--black);
+    font-size: 1.5rem;
+    line-height: 2;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.book .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.book .row .image{
+    flex: 1 1 45rem;
+}
+.book .row .image img{
+    width: 100%;
+}
+.book .row form{
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    padding: 2rem;
+    border-radius: .5rem;
+}
+.book .row form h3{
+    color: var(--black);
+    padding-bottom: 1rem;
+    font-size:3rem;
+
+}
+.book .row form .box{
+    width: 100%;
+    margin: .7rem 0;
+    border-radius: .5rem;
+    border: var(--border);
+    font-size:1.6rem;
+    color: var(--black);
+    text-transform: none;
+    padding: 1rem;
+}
+.book .row form .btn{
+    padding: 1rem 4rem;
+}
+.footer .box-container{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(22rem,1fr));
+}
+.footer .box-container .box h3{
+    font-size:2.5rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a{
+    display: block;
+    font-size:1.5rem;
+    color: var(--light-clr);
+    padding: 1rem 0;
+}
+.footer .box-container .box a i{
+    padding-right: .5rem;
+    color: var(--green);
+}
+.footer .box-container .box a:hover i{
+    padding-right: 2rem;
+}
+.footer .credits{
+    padding: 1rem;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size:2rem;
+    color:var(--light-clr);
+    border-top: .1rem solid rgba(0,0,0,0.1);
+
+}
+
+
+/* media quries */
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 2rem;
+    }
+}
+@media(max-width:768px){
+    #menuBtn{
+        display: initial;
+    }
+    .navbar{
+        position: absolute;
+        top:115%; right:2rem;
+        border-radius: .5rem;
+        box-shadow: var(--box-shadow);
+        width: 30rem;
+        background: #fff;
+        transform: scale(0);
+        opacity: 0;
+        transform-origin: top right;
+        transition: none;
+    }
+    .navbar.active{
+        transform: scale(1);
+        opacity: 1;
+        transition: 0.2s ease-out;
+
+    }
+    .navbar a{
+        font-size:2rem;
+        display: block;
+        margin: 2.5rem;
+    }
+    section{
+        padding:2rem;
+    }
+    #home{
+        flex-direction: column;
+    }
+    .row{
+        flex-direction: column;
+    }
+    
+}
+
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    .header{
+        padding: 2rem;
+    }
+}
